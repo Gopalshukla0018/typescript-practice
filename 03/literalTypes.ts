@@ -1,4 +1,4 @@
-// here we learn about literal types- we can say it is custom types--
+// here we learn about literal types- we can say it is custom types--hwewre  conversionType === "as-number" this is literal types
 
 function combine(
   num1: string | number,
