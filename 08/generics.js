@@ -39,3 +39,6 @@ var numberBox = { value: 200 };
 var stringBox = { value: "string vaue check" };
 console.log(numberBox); // valid
 console.log(stringBox); // valid
+var reponse = { data: "success", status: 200 }; // default top string
+var jsonRes = { data: { name: "Gopal" }, status: 200 };
+console.log(jsonRes);

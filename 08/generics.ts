@@ -59,3 +59,25 @@ console.log(numberBox); // valid
 console.log(stringBox); // valid
 
 
+// Generic default
+
+
+/// by = string it make string default
+interface User<T =string>{
+  data:T, 
+  status:number
+}
+
+const reponse:User={data:"success",status:200} // default top string
+
+
+
+const jsonRes:User<object>={data:{name:"Gopal"},status:200}
+console.log(jsonRes);
+
+
+
+
+
+
+
