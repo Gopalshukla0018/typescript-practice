@@ -35,3 +35,7 @@ function createObject(key, value, isActive) {
 }
 var obj = createObject("age", 25, true);
 console.log(obj);
+var numberBox = { value: 200 };
+var stringBox = { value: "string vaue check" };
+console.log(numberBox); // valid
+console.log(stringBox); // valid

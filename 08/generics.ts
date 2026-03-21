@@ -44,3 +44,18 @@ function createObject<T extends string, U extends number, V extends boolean>(
 
 const  obj=createObject("age",25,true)
 console.log(obj);
+
+
+//3. Generic interface
+
+interface Box<T>{
+    value:
+}
+
+
+const numberBox:Box<number>={value:200}
+const stringBox: Box<string>={value:"string vaue check"}
+console.log(numberBox); // valid
+console.log(stringBox); // valid
+
+
