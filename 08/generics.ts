@@ -22,3 +22,25 @@ const Boy: Person = {
 
 // now we can use Array<Boy>
 // so it is become array of object
+
+
+// ex-2
+
+function merge<T, U, S>(objA: T, objB: U, objC: S) {
+  return { ...objA, ...objB, ...objC };
+}
+const res = merge({ name: "Gopal" }, { role: "CEO" }, { id: "d1" });
+console.log(res);
+
+// 2. Generic Constraints
+
+function createObject<T extends string, U extends number, V extends boolean>(
+  key: T,
+  value: U,
+  isActive: V,
+): { key: T; value: U; isActive: V } {
+  return { key, value, isActive };
+}
+
+const  obj=createObject("age",25,true)
+console.log(obj);
